@@ -1,5 +1,5 @@
 {% set name = "google-cloud-audit-log" %}
-{% set version = "0.2.0" %}
+{% set version = "0.2.2" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/google-cloud-audit-log-{{ version }}.tar.gz
-  sha256: d0852f525ad65705f9fbff6288be4493e1449a7906fb5e01bd71c8d1e424d1fc
+  sha256: 6d89903848aee9817477ece306544851b903a5ec561da966bbba5a8d12509a4d
 
 build:
   number: 0
@@ -21,8 +21,8 @@ requirements:
     - pip
   run:
     - python >=3.4
-    - googleapis-common-protos >=1.52.0
-    - protobuf >=3.6.0
+    - googleapis-common-protos >=1.56.2,< 2.0dev
+    - protobuf >=3.6.0,<4.0.0dev
 
 test:
   imports:
