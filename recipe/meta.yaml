@@ -1,5 +1,5 @@
 {% set name = "google-cloud-audit-log" %}
-{% set version = "0.2.4" %}
+{% set version = "0.2.5" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/google-cloud-audit-log-{{ version }}.tar.gz
-  sha256: aabe5543671e4f8a9c7a4c0e3ea9a87ba2ba2b96f9ffad6faa02209900e1f308
+  sha256: 86e2faba3383adc8fd04a5bd7fd4f960b3e4aedaa7ed950f2f891ce16902eb6b
 
 build:
   number: 0
