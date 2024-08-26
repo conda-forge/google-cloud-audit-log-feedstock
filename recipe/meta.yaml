@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/google_cloud_audit_log-{{ version }}.tar.gz
   sha256: 901428b257020d8c1d1133e0fa004164a555e5a395c7ca3cdbb8486513df3a65
 
 build:
