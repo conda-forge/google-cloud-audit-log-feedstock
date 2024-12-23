@@ -6,21 +6,21 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/google_cloud_audit_log-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/google_cloud_audit_log-{{ version }}.tar.gz
   sha256: 901428b257020d8c1d1133e0fa004164a555e5a395c7ca3cdbb8486513df3a65
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
 requirements:
   host:
-    - python >=3.7
+    - python {{ python_min }}
     - pip
     - setuptools
   run:
-    - python >=3.7
+    - python >={{ python_min }}
     - protobuf >=3.20.2,<6.0.0dev,!=4.21.1,!=4.21.2,!=4.21.3,!=4.21.4,!=4.21.5
     - googleapis-common-protos >=1.56.2,<2.0dev
 
@@ -31,6 +31,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/googleapis/python-audit-log
