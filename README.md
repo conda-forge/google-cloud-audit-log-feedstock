@@ -3,15 +3,15 @@ About google-cloud-audit-log-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/google-cloud-audit-log-feedstock/blob/main/LICENSE.txt)
 
-Home: https://github.com/googleapis/python-audit-log
+Home: https://github.com/googleapis/google-cloud-python/tree/main/packages/google-cloud-audit-log
 
 Package license: Apache-2.0
 
 Summary: Google Cloud Audit Protos
 
-Development: https://github.com/googleapis/python-audit-log
+Development: https://github.com/googleapis/google-cloud-python/tree/main/packages/google-cloud-audit-log
 
-Documentation: https://github.com/googleapis/python-audit-log
+Documentation: https://github.com/googleapis/google-cloud-python/tree/main/packages/google-cloud-audit-log
 
 Current build status
 ====================
