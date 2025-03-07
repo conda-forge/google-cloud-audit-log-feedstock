@@ -34,12 +34,12 @@ test:
     - python {{ python_min }}
 
 about:
-  home: https://github.com/googleapis/python-audit-log
+  home: https://github.com/googleapis/google-cloud-python/tree/main/packages/google-cloud-audit-log
   summary: Google Cloud Audit Protos
   license: Apache-2.0
   license_file: LICENSE
-  doc_url: https://github.com/googleapis/python-audit-log
-  dev_url: https://github.com/googleapis/python-audit-log
+  doc_url: https://github.com/googleapis/google-cloud-python/tree/main/packages/google-cloud-audit-log
+  dev_url: https://github.com/googleapis/google-cloud-python/tree/main/packages/google-cloud-audit-log
 
 extra:
   recipe-maintainers:
