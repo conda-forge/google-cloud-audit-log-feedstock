@@ -26,17 +26,13 @@ requirements:
     - python >=${{ python_min }}
     - protobuf >=4.25.8,<8.0.0
     - googleapis-common-protos >=1.56.2,<2.0.0
+
 tests:
   - python:
       imports:
         - google.cloud.audit.audit_log_pb2
       python_version: ${{ python_min }}.*
-  - requirements:
-      run:
-        - pip
-        - python ${{ python_min }}.*
-    script:
-      - pip check
+      pip_check: true
 
 about:
   summary: Google Cloud Audit Protos
