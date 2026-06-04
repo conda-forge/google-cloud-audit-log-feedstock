@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: google-cloud-audit-log
-  version: 0.5.0
+  version: "0.6.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/google_cloud_audit_log-${{ version }}.tar.gz
-  sha256: 3b32d5e77db634c46fbd6c5e01f5bda836f420dfbb21d730501c75e9fab4e4a4
+  sha256: 4dd343683c0bb31187ebef3426803f13159e950fbea3fe60a864855cfed959b8
 
 build:
   number: 0
