@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: google-cloud-audit-log
-  version: "0.6.0"
+  version: 0.6.1
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/google_cloud_audit_log-${{ version }}.tar.gz
-  sha256: 4dd343683c0bb31187ebef3426803f13159e950fbea3fe60a864855cfed959b8
+  sha256: 4aba72b45dc15344da1b2d8981320050fe39cfe80432f38e7318aa2e477c5bf2
 
 build:
   number: 0
@@ -24,14 +24,16 @@ requirements:
     - setuptools
   run:
     - python >=${{ python_min }}
-    - protobuf >=4.25.8,<8.0.0
-    - googleapis-common-protos >=1.56.2,<2.0.0
+    - protobuf >=6.33.5,<8.0.0
+    - googleapis-common-protos >=1.69.2,<2.0.0
 
 tests:
   - python:
       imports:
         - google.cloud.audit.audit_log_pb2
-      python_version: ${{ python_min }}.*
+      python_version:
+        - ${{ python_min }}.*
+        - "*"
       pip_check: true
 
 about:
